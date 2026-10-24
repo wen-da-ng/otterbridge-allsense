@@ -1,0 +1,49 @@
+name: Something in the app doesn't work
+description: A crash, a sensor that won't show, a link that drops…
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Problems with a library (Python, C++, Rust, ROS 2, Arduino) go to that library's repository.
+        Please don't paste your pairing link or token: anyone with it can read your phone's streams.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: Settings → Version (e.g. 0.1.0).
+    validations:
+      required: true
+  - type: input
+    id: phone
+    attributes:
+      label: Phone and Android version
+      placeholder: e.g. Pixel 4a, Android 13
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where
+      options:
+        - Sensors / Explorer
+        - Cameras or microphones
+        - Streaming to a browser or program (Wi-Fi, USB)
+        - Microcontroller (USB cable or Bluetooth)
+        - MQTT
+        - Robot (mount, AprilTags, recording, commands)
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: more
+    attributes:
+      label: Anything else
+      description: Screenshots, or the client and its version if the problem shows up there. Hide your location and pairing token in screenshots.

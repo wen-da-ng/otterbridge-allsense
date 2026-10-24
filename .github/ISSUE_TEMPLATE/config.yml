@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: A problem with a library or the protocol
+    url: https://docs.allsense.otterbridge.org/contributing/
+    about: Python, C++, Rust, ROS 2, Arduino and the protocol each have their own repository; the list is here.
+  - name: A security problem
+    url: https://github.com/wen-da-ng/.github/blob/main/SECURITY.md
+    about: Please report it privately, not in a public issue.
+  - name: How do I…?
+    url: https://docs.allsense.otterbridge.org/
+    about: Get started, guides and the protocol.

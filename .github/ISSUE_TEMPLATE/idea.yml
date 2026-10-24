@@ -1,0 +1,15 @@
+name: An idea for the app
+description: A sensor, link or feature you'd like
+labels: [idea]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What would you like to do with your robot?
+      description: The goal first (e.g. "follow a line with the camera"), then what the app could do for it.
+    validations:
+      required: true
+  - type: textarea
+    id: more
+    attributes:
+      label: Anything else
